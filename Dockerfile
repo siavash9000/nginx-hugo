@@ -1,7 +1,7 @@
 FROM bitnami/nginx:1.16.1
 
-WORKDIR /website
-ADD . /website
+WORKDIR /hugo
+ADD . /hugo
 
 ENV HUGO_VERSION 0.69.0
 ENV HUGO_BINARY hugo_extended_${HUGO_VERSION}_linux-64bit
