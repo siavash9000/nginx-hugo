@@ -9,3 +9,4 @@ USER 0
 RUN apt update && apt install -y npm
 ADD https://github.com/spf13/hugo/releases/download/v${HUGO_VERSION}/${HUGO_BINARY}.tar.gz .
 RUN tar xzf ./${HUGO_BINARY}.tar.gz
+RUN mv /hugo/hugo /usr/bin
