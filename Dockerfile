@@ -6,6 +6,6 @@ ENV HUGO_BINARY hugo_extended_${HUGO_VERSION}_linux-64bit
 ENV NGINX_HTTP_PORT_NUMBER=8081
 
 USER 0
-RUN apt update && apt install -y nodejs
+RUN apt update && apt install -y npm
 ADD https://github.com/spf13/hugo/releases/download/v${HUGO_VERSION}/${HUGO_BINARY}.tar.gz .
 RUN tar xzf ./${HUGO_BINARY}.tar.gz
